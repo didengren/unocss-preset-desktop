@@ -13,7 +13,7 @@ const defaultOption: Required<PresetDesktopOption> = {
 }
 
 export function presetDesktop(option?: PresetDesktopOption): Preset {
-  const config = Object.assign(defaultOption, option)
+  const config = Object.assign({}, defaultOption, option)
   return {
     name: '@trinapower/unocss-preset-desktop',
     rules: [
