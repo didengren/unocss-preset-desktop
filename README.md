@@ -1,6 +1,6 @@
 # @trinapower/unocss-preset-desktop
 
-[![NPM version](https://img.shields.io/npm/v/unocss-preset-scrollbar?color=a1b858&label=)](https://www.npmjs.com/package/unocss-preset-scrollbar) 
+[![NPM version](https://img.shields.io/npm/v/@trinapower/unocss-preset-desktop?color=a1b858&label=)](https://www.npmjs.com/package/@trinapower/unocss-preset-desktop) 
 
 a [unocss](https://github.com/unocss/unocss) preset for desktop website template
 
