@@ -1,1 +1,1 @@
-# @trina/unocss-preset-desktop
+# @trinapower/unocss-preset-desktop
