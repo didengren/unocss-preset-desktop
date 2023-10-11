@@ -1,4 +1,5 @@
 import type { Preset } from 'unocss'
+import presetAutoprefixer from 'unocss-preset-autoprefixer'
 
 export interface PresetDesktopOption {
   /**
@@ -14,8 +15,10 @@ const defaultOption: Required<PresetDesktopOption> = {
 
 export function presetDesktop(option?: PresetDesktopOption): Preset {
   const config = Object.assign({}, defaultOption, option)
+
   return {
     name: '@trinapower/unocss-preset-desktop',
+    presets: [presetAutoprefixer()],
     rules: [
       [
         'font-desktop',
@@ -62,6 +65,11 @@ export function presetDesktop(option?: PresetDesktopOption): Preset {
             addRawCss += createCss(index, 'y')
           }
           return `
+            ul {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+            }
             ${addRawCss}
             @keyframes enter-x-animation {
               to {
